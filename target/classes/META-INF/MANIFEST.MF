@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: SubcriptionService
+Implementation-Version: 0.1
+Built-By: 1412502
+Implementation-Vendor-Id: com.tcs
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://projects.spring.io/spring-boot/SubcriptionS
+ ervice/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
