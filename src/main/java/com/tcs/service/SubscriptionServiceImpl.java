@@ -2,13 +2,13 @@ package com.tcs.service;
 
 public class SubscriptionServiceImpl {
 	
-	public static boolean  checkUserSubcription(int id) {
+	public static int  checkUserSubcription(int id) {
 		
 		 if ( id % 2 == 0 ) {
 			 
-			 return true;
+			 return -1;
 		 } else {
-			 return false;
+			 return id + 1;
 		 }
 	}
 
