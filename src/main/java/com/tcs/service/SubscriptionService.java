@@ -18,7 +18,8 @@ public class SubscriptionService {
 
 	
 	@CrossOrigin
-	@RequestMapping(method = RequestMethod.GET, value = PATH + "/{id}")
+	@RequestMapping(method = RequestMethod.GET, value = PATH + "/{id}",produces = "application/json; charset=UTF-8")
+	
 	public ResponseEntity<?> getId(@PathVariable("id") int id) { 
 		System.out.print(SubscriptionServiceImpl.checkUserSubcription(id));
 		return new ResponseEntity<>(SubscriptionServiceImpl.checkUserSubcription(id), HttpStatus.OK);

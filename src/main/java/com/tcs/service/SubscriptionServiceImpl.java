@@ -1,14 +1,16 @@
 package com.tcs.service;
 
 public class SubscriptionServiceImpl {
-	
-	public static int  checkUserSubcription(int id) {
+
+	public static MyJaxbBean  checkUserSubcription(int id) {
 		
 		 if ( id % 2 == 0 ) {
-			 
-			 return -1;
+			 MyJaxbBean even = new MyJaxbBean(false, 0);
+			 return even;
 		 } else {
-			 return id + 1;
+			 int amount = id - 1000000;
+			 MyJaxbBean odd = new MyJaxbBean(true, amount);
+			 return odd;
 		 }
 	}
 
